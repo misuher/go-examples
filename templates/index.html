@@ -1,0 +1,9 @@
+{{template "header"}}
+		<p>main content where we can add dynamic content: {{ .Content}}</p>
+		<p>I can template numbers too: {{ .Num}}</p>
+		<p>I can iterate throught slices:
+			{{ range .Names}}
+				{{.}}
+			{{end}}
+		</p>
+{{template "footer"}}
