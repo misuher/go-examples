@@ -1,7 +1,7 @@
-//Package myTest are a bunch of simple function to make test examples
+//Package test are a bunch of simple function to make test examples
 //the function that test the ones included here have to be in a file named
 //like this one but with "_test.go" at the end
-package myTest
+package test
 
 //IntTest is a funtion to make a test by its returned value
 func IntTest() int {

@@ -1,4 +1,5 @@
-package myTest
+//package name must math the one we are testing
+package test
 
 //the golang standard library suppot testing
 import (
