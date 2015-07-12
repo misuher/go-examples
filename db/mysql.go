@@ -83,6 +83,12 @@ func main() {
 		panic(err)
 	}
 	defer db.Close()
+
+	_, err = db.Exec(CREATE TABLE test (id INT, username varchar(100), password text));
+	if err != nil {
+		panic(err)
+	}
+
 	insert(db)
 	update(db)
 	delete(db)
