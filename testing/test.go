@@ -1,17 +1,24 @@
-//First of all notice that the test file is named "xxxxxx_test.go"
-//so this is not where the test take place
+//Package myTest are a bunch of simple function to make test examples
+//the function that test the ones included here have to be in a file named
+//like this one but with "_test.go" at the end
 package myTest
 
-//we are going to define some weird function
-//in order to test them based on the types they return
+//IntTest is a funtion to make a test by its returned value
 func IntTest() int {
 	return 5 + 6
 }
 
-func BoolTest() bool {
-	return true
+//BoolTest is just other example for a test
+func BoolTest(a, b int) bool {
+	return a == b
 }
 
+//StringTest is a function to make a test bt the returned type
 func StringTest() string {
 	return "string"
+}
+
+//SumTest is a function to make a demo of how to test several parameters at once
+func SumTest(a, b int) int {
+	return a + b
 }
