@@ -18,7 +18,6 @@ func preview(w http.ResponseWriter, r *http.Request) {
 	}
 
 	field := r.FormValue("textfield")
-	//TODO: markdown parser call
 	log.Println("Ajax:", field)
 	w.Write([]byte(field))
 }
