@@ -3,7 +3,7 @@ package binarySearch_test
 import (
 	"testing"
 
-	. "github.com/misuher/go-examples/algo"
+	. "github.com/misuher/go-examples/algo-search"
 )
 
 func TestBsearch(t *testing.T) {

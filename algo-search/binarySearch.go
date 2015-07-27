@@ -1,15 +1,14 @@
 package binarySearch
 
 func Bsearch(arr []int, elemToFind int) int {
-	//var low, high int
-	i := 0
-	j := len(arr)
-	for i < j {
-		middle := i + (j-i)/2 //avoid overflow
+	low := 0
+	high := len(arr)
+	for low < high {
+		middle := low + (high-low)/2 //avoid overflow
 		if arr[middle] < elemToFind {
-			i = middle + 1
+			low = middle + 1
 		} else if arr[middle] > elemToFind {
-			j = middle
+			high = middle
 		} else {
 			return middle
 		}
