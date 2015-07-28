@@ -1,4 +1,5 @@
-//package name must math the one we are testing
+//package name must match the one we are testing, this is the way if we have no API to export
+//if we have an API we name it test_test and import the tested package
 package test
 
 //the golang standard library suppot testing
