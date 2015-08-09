@@ -16,7 +16,7 @@ func preview(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
-
+	
 	field := r.FormValue("textfield")
 	log.Println("Ajax:", field)
 	w.Write([]byte(field))
